@@ -1,0 +1,33 @@
+name:                machination
+version:             1.0.0
+github:              "KtorZ/machination"
+license:             MPL-2.0
+author:              "KtorZ <matthias.benkort@gmail.com>"
+maintainer:          "matthias.benkort@gmail.com"
+copyright:           "2020 KtorZ <matthias.benkort@gmail.com>"
+
+extra-source-files:
+- ChangeLog.md
+
+# Metadata used when publishing your package
+synopsis:            Plot charts as unicode strings.
+category:            Plotting
+description:         Please see the README on GitHub at <https://github.com/KtorZ/machination>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+tests:
+  unit:
+    main: Spec.hs
+    source-dirs: test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - machination
+    - hspec
