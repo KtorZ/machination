@@ -75,7 +75,7 @@
 </span><a href="Plot.Text.Histogram.html#%24sel%3Aheight%3AHistogram"><span class="hs-identifier hs-var hs-var">height</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-glyph">!</span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span>
 </span><span id="line-74"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="%24sel%3Abins%3AHistogram"><span class="annot"><span class="annottext">Histogram -&gt; [(String, Int)]
 </span><a href="Plot.Text.Histogram.html#%24sel%3Abins%3AHistogram"><span class="hs-identifier hs-var hs-var">bins</span></a></span></span><span>   </span><span class="hs-glyph">::</span><span> </span><span class="hs-glyph">!</span><span class="hs-special">[</span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span class="hs-special">)</span><span class="hs-special">]</span><span>
-</span><span id="line-75"></span><span>    </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679041864"><span id="local-6989586621679041866"><span id="local-6989586621679041868"><span class="annot"><span class="annottext">Int -&gt; Histogram -&gt; ShowS
+</span><span id="line-75"></span><span>    </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679041681"><span id="local-6989586621679041683"><span id="local-6989586621679041685"><span class="annot"><span class="annottext">Int -&gt; Histogram -&gt; ShowS
 [Histogram] -&gt; ShowS
 Histogram -&gt; String
 (Int -&gt; Histogram -&gt; ShowS)
@@ -90,7 +90,7 @@ show :: Histogram -&gt; String
 $cshow :: Histogram -&gt; String
 showsPrec :: Int -&gt; Histogram -&gt; ShowS
 $cshowsPrec :: Int -&gt; Histogram -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679041855"><span id="local-6989586621679041857"><span id="local-6989586621679041859"><span id="local-6989586621679041861"><span class="annot"><span class="annottext">ReadPrec [Histogram]
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679041672"><span id="local-6989586621679041674"><span id="local-6989586621679041676"><span id="local-6989586621679041678"><span class="annot"><span class="annottext">ReadPrec [Histogram]
 ReadPrec Histogram
 Int -&gt; ReadS Histogram
 ReadS [Histogram]
@@ -115,22 +115,22 @@ $creadsPrec :: Int -&gt; ReadS Histogram
 </span><span id="line-77"></span><span class="hs-comment">-- | Convert an 'Histogram' to 'String'</span><span>
 </span><span id="line-78"></span><span class="annot"><a href="Plot.Text.Histogram.html#plot"><span class="hs-identifier hs-type">plot</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Histogram"><span class="hs-identifier hs-type">Histogram</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span>
 </span><span id="line-79"></span><span id="plot"><span class="annot"><span class="annottext">plot :: Histogram -&gt; String
-</span><a href="Plot.Text.Histogram.html#plot"><span class="hs-identifier hs-var hs-var">plot</span></a></span></span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Histogram"><span class="hs-identifier hs-type">Histogram</span></a></span><span class="hs-special">{</span><span id="local-6989586621679041853"><span class="annot"><span class="annottext">Int
+</span><a href="Plot.Text.Histogram.html#plot"><span class="hs-identifier hs-var hs-var">plot</span></a></span></span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Histogram"><span class="hs-identifier hs-type">Histogram</span></a></span><span class="hs-special">{</span><span id="local-6989586621679041670"><span class="annot"><span class="annottext">Int
 width :: Int
 $sel:width:Histogram :: Histogram -&gt; Int
-</span><a href="#local-6989586621679041853"><span class="hs-identifier hs-var hs-var">width</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679041852"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679041670"><span class="hs-identifier hs-var hs-var">width</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679041669"><span class="annot"><span class="annottext">Int
 height :: Int
 $sel:height:Histogram :: Histogram -&gt; Int
-</span><a href="#local-6989586621679041852"><span class="hs-identifier hs-var hs-var">height</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679041851"><span class="annot"><span class="annottext">[(String, Int)]
+</span><a href="#local-6989586621679041669"><span class="hs-identifier hs-var hs-var">height</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679041668"><span class="annot"><span class="annottext">[(String, Int)]
 bins :: [(String, Int)]
 $sel:bins:Histogram :: Histogram -&gt; [(String, Int)]
-</span><a href="#local-6989586621679041851"><span class="hs-identifier hs-var hs-var">bins</span></a></span></span><span class="hs-special">}</span><span>
+</span><a href="#local-6989586621679041668"><span class="hs-identifier hs-var hs-var">bins</span></a></span></span><span class="hs-special">}</span><span>
 </span><span id="line-80"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041852"><span class="hs-identifier hs-var">height</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
+</span><a href="#local-6989586621679041669"><span class="hs-identifier hs-var">height</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="hs-number">0</span></span><span> </span><span class="annot"><span class="annottext">Bool -&gt; Bool -&gt; Bool
 </span><span class="hs-operator hs-var">||</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041853"><span class="hs-identifier hs-var">width</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
+</span><a href="#local-6989586621679041670"><span class="hs-identifier hs-var">width</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="hs-number">0</span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-81"></span><span>        </span><span class="annot"><span class="hs-string">&quot;&quot;</span></span><span>
@@ -148,41 +148,41 @@ forall a. Monoid a =&gt; [a] -&gt; a
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; [Axis] -&gt; Plot
 </span><a href="Plot.Text.Histogram.html#axis"><span class="hs-identifier hs-var">axis</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041846"><span class="hs-identifier hs-var">widthYAxis</span></a></span><span> </span><span class="annot"><span class="annottext">[Axis]
-</span><a href="#local-6989586621679041845"><span class="hs-identifier hs-var">ys</span></a></span><span> </span><span class="annot"><span class="annottext">Plot -&gt; [Plot] -&gt; [Plot]
+</span><a href="#local-6989586621679041663"><span class="hs-identifier hs-var">widthYAxis</span></a></span><span> </span><span class="annot"><span class="annottext">[Axis]
+</span><a href="#local-6989586621679041662"><span class="hs-identifier hs-var">ys</span></a></span><span> </span><span class="annot"><span class="annottext">Plot -&gt; [Plot] -&gt; [Plot]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Bar -&gt; Plot
 </span><a href="Plot.Text.Histogram.html#bar"><span class="hs-identifier hs-var">bar</span></a></span><span> </span><span class="annot"><span class="annottext">(Bar -&gt; Plot) -&gt; ((String, Int) -&gt; Bar) -&gt; (String, Int) -&gt; Plot
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">(String, Int) -&gt; Bar
 forall i. Real i =&gt; (String, i) -&gt; Bar
-</span><a href="#local-6989586621679041842"><span class="hs-identifier hs-var">mkBar</span></a></span><span> </span><span class="annot"><span class="annottext">((String, Int) -&gt; Plot) -&gt; [(String, Int)] -&gt; [Plot]
+</span><a href="#local-6989586621679041659"><span class="hs-identifier hs-var">mkBar</span></a></span><span> </span><span class="annot"><span class="annottext">((String, Int) -&gt; Plot) -&gt; [(String, Int)] -&gt; [Plot]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">[(String, Int)]
-</span><a href="#local-6989586621679041851"><span class="hs-identifier hs-var">bins</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679041668"><span class="hs-identifier hs-var">bins</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-84"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-85"></span><span>    </span><span id="local-6989586621679041840"><span class="annot"><span class="annottext">highest :: Int
-</span><a href="#local-6989586621679041840"><span class="hs-identifier hs-var hs-var">highest</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Int] -&gt; Int
+</span><span id="line-85"></span><span>    </span><span id="local-6989586621679041657"><span class="annot"><span class="annottext">highest :: Int
+</span><a href="#local-6989586621679041657"><span class="hs-identifier hs-var hs-var">highest</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Int] -&gt; Int
 forall (t :: * -&gt; *) a. (Foldable t, Ord a) =&gt; t a -&gt; a
 </span><span class="hs-identifier hs-var">maximum</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(String, Int) -&gt; Int
 forall a b. (a, b) -&gt; b
 </span><span class="hs-identifier hs-var">snd</span></span><span> </span><span class="annot"><span class="annottext">((String, Int) -&gt; Int) -&gt; [(String, Int)] -&gt; [Int]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">[(String, Int)]
-</span><a href="#local-6989586621679041851"><span class="hs-identifier hs-var">bins</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-86"></span><span>    </span><span id="local-6989586621679041838"><span class="annot"><span class="annottext">nbLbls :: Int
-</span><a href="#local-6989586621679041838"><span class="hs-identifier hs-var hs-var">nbLbls</span></a></span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041668"><span class="hs-identifier hs-var">bins</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-86"></span><span>    </span><span id="local-6989586621679041655"><span class="annot"><span class="annottext">nbLbls :: Int
+</span><a href="#local-6989586621679041655"><span class="hs-identifier hs-var hs-var">nbLbls</span></a></span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Ord a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-identifier hs-var">min</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[(String, Int)] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[(String, Int)]
-</span><a href="#local-6989586621679041851"><span class="hs-identifier hs-var">bins</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041852"><span class="hs-identifier hs-var">height</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041668"><span class="hs-identifier hs-var">bins</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679041669"><span class="hs-identifier hs-var">height</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Integral a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">`div`</span></span><span> </span><span class="annot"><span class="hs-number">3</span></span><span class="hs-special">)</span><span>
 </span><span id="line-87"></span><span>
-</span><span id="line-88"></span><span>    </span><span id="local-6989586621679041846"><span class="annot"><span class="annottext">widthYAxis :: Int
-</span><a href="#local-6989586621679041846"><span class="hs-identifier hs-var hs-var">widthYAxis</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Int] -&gt; Int
+</span><span id="line-88"></span><span>    </span><span id="local-6989586621679041663"><span class="annot"><span class="annottext">widthYAxis :: Int
+</span><a href="#local-6989586621679041663"><span class="hs-identifier hs-var hs-var">widthYAxis</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Int] -&gt; Int
 forall (t :: * -&gt; *) a. (Foldable t, Ord a) =&gt; t a -&gt; a
 </span><span class="hs-identifier hs-var">maximum</span></span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
@@ -193,53 +193,53 @@ forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">(String -&gt; Int) -&gt; [String] -&gt; [Int]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041833"><span class="hs-identifier hs-var">lbls</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679041650"><span class="hs-identifier hs-var">lbls</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-89"></span><span>
-</span><span id="line-90"></span><span>    </span><span id="local-6989586621679041842"><span class="annot"><span class="annottext">mkBar :: (String, i) -&gt; Bar
-</span><a href="#local-6989586621679041842"><span class="hs-identifier hs-var hs-var">mkBar</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679041832"><span class="annot"><span class="annottext">label :: String
-</span><a href="#local-6989586621679041832"><span class="hs-keyword hs-var">label</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679041831"><span class="annot"><span class="annottext">x :: i
-</span><a href="#local-6989586621679041831"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Bar :: Int -&gt; Int -&gt; String -&gt; Bar
+</span><span id="line-90"></span><span>    </span><span id="local-6989586621679041659"><span class="annot"><span class="annottext">mkBar :: (String, i) -&gt; Bar
+</span><a href="#local-6989586621679041659"><span class="hs-identifier hs-var hs-var">mkBar</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679041649"><span class="annot"><span class="annottext">label :: String
+</span><a href="#local-6989586621679041649"><span class="hs-keyword hs-var">label</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679041648"><span class="annot"><span class="annottext">x :: i
+</span><a href="#local-6989586621679041648"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Bar :: Int -&gt; Int -&gt; String -&gt; Bar
 </span><a href="Plot.Text.Histogram.html#Bar"><span class="hs-identifier hs-type hs-type">Bar</span></a></span><span>
 </span><span id="line-91"></span><span>        </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">$sel:width:Bar :: Int
 </span><a href="Plot.Text.Histogram.html#%24sel%3Awidth%3ABar"><span class="hs-identifier hs-var">width</span></a></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="hs-number">1</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041853"><span class="hs-identifier hs-var">width</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041670"><span class="hs-identifier hs-var">width</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="hs-number">2</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041846"><span class="hs-identifier hs-var">widthYAxis</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041663"><span class="hs-identifier hs-var">widthYAxis</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Integral a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">`div`</span></span><span> </span><span class="annot"><span class="annottext">[(String, Int)] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[(String, Int)]
-</span><a href="#local-6989586621679041851"><span class="hs-identifier hs-var">bins</span></a></span><span>
+</span><a href="#local-6989586621679041668"><span class="hs-identifier hs-var">bins</span></a></span><span>
 </span><span id="line-92"></span><span>        </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">$sel:height:Bar :: Int
 </span><a href="Plot.Text.Histogram.html#%24sel%3Aheight%3ABar"><span class="hs-identifier hs-var">height</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Double -&gt; Int
 forall a b. (RealFrac a, Integral b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">round</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Double
 forall i. Real i =&gt; i -&gt; Double
 </span><a href="Plot.Text.Histogram.html#double"><span class="hs-identifier hs-var">double</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041852"><span class="hs-identifier hs-var">height</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
+</span><a href="#local-6989586621679041669"><span class="hs-identifier hs-var">height</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">i -&gt; Double
 forall i. Real i =&gt; i -&gt; Double
 </span><a href="Plot.Text.Histogram.html#double"><span class="hs-identifier hs-var">double</span></a></span><span> </span><span class="annot"><span class="annottext">i
-</span><a href="#local-6989586621679041831"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
+</span><a href="#local-6989586621679041648"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
 forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Double
 forall i. Real i =&gt; i -&gt; Double
 </span><a href="Plot.Text.Histogram.html#double"><span class="hs-identifier hs-var">double</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041840"><span class="hs-identifier hs-var">highest</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679041657"><span class="hs-identifier hs-var">highest</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-93"></span><span>        </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
 $sel:label:Bar :: String
 label :: String
 </span><a href="Plot.Text.Histogram.html#%24sel%3Alabel%3ABar"><span class="hs-keyword hs-var hs-var">label</span></a></span><span>
 </span><span id="line-94"></span><span>        </span><span class="hs-special">}</span><span>
 </span><span id="line-95"></span><span>
-</span><span id="line-96"></span><span>    </span><span id="local-6989586621679041833"><span class="annot"><span class="annottext">lbls :: [String]
-</span><a href="#local-6989586621679041833"><span class="hs-identifier hs-var hs-var">lbls</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; [String]
+</span><span id="line-96"></span><span>    </span><span id="local-6989586621679041650"><span class="annot"><span class="annottext">lbls :: [String]
+</span><a href="#local-6989586621679041650"><span class="hs-identifier hs-var hs-var">lbls</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; [String]
 forall a. Eq a =&gt; [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">nub</span></span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">Integer -&gt; String
 forall a. Show a =&gt; a -&gt; String
@@ -250,24 +250,24 @@ forall a b. (RealFrac a, Integral b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">round</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Double
 forall i. Real i =&gt; i -&gt; Double
 </span><a href="Plot.Text.Histogram.html#double"><span class="hs-identifier hs-var">double</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041840"><span class="hs-identifier hs-var">highest</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
+</span><a href="#local-6989586621679041657"><span class="hs-identifier hs-var">highest</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Double
 forall i. Real i =&gt; i -&gt; Double
 </span><a href="Plot.Text.Histogram.html#double"><span class="hs-identifier hs-var">double</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041820"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
+</span><a href="#local-6989586621679041637"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
 forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Double
 forall i. Real i =&gt; i -&gt; Double
 </span><a href="Plot.Text.Histogram.html#double"><span class="hs-identifier hs-var">double</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041838"><span class="hs-identifier hs-var">nbLbls</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-97"></span><span>               </span><span class="hs-glyph">|</span><span> </span><span id="local-6989586621679041820"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041820"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="hs-number">1</span></span><span> </span><span class="hs-glyph">..</span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041838"><span class="hs-identifier hs-var">nbLbls</span></a></span><span> </span><span class="hs-special">]</span><span>
+</span><a href="#local-6989586621679041655"><span class="hs-identifier hs-var">nbLbls</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-97"></span><span>               </span><span class="hs-glyph">|</span><span> </span><span id="local-6989586621679041637"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679041637"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="hs-number">1</span></span><span> </span><span class="hs-glyph">..</span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679041655"><span class="hs-identifier hs-var">nbLbls</span></a></span><span> </span><span class="hs-special">]</span><span>
 </span><span id="line-98"></span><span>               </span><span class="hs-special">]</span><span>
 </span><span id="line-99"></span><span>
-</span><span id="line-100"></span><span>    </span><span id="local-6989586621679041845"><span class="annot"><span class="annottext">ys :: [Axis]
-</span><a href="#local-6989586621679041845"><span class="hs-identifier hs-var hs-var">ys</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; String -&gt; Axis
+</span><span id="line-100"></span><span>    </span><span id="local-6989586621679041662"><span class="annot"><span class="annottext">ys :: [Axis]
+</span><a href="#local-6989586621679041662"><span class="hs-identifier hs-var hs-var">ys</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; String -&gt; Axis
 </span><a href="Plot.Text.Histogram.html#Axis"><span class="hs-identifier hs-var">Axis</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double -&gt; Int
 forall a b. (RealFrac a, Integral b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">round</span></span><span> </span><span class="annot"><span class="annottext">(Double -&gt; Int) -&gt; Double -&gt; Int
@@ -275,19 +275,19 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Double
 forall i. Real i =&gt; i -&gt; Double
 </span><a href="Plot.Text.Histogram.html#double"><span class="hs-identifier hs-var">double</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041852"><span class="hs-identifier hs-var">height</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
+</span><a href="#local-6989586621679041669"><span class="hs-identifier hs-var">height</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
 forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Double
 forall i. Real i =&gt; i -&gt; Double
 </span><a href="Plot.Text.Histogram.html#double"><span class="hs-identifier hs-var">double</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[String] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041833"><span class="hs-identifier hs-var">lbls</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
+</span><a href="#local-6989586621679041650"><span class="hs-identifier hs-var">lbls</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="hs-number">1</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(String -&gt; Axis) -&gt; [String] -&gt; [Axis]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041833"><span class="hs-identifier hs-var">lbls</span></a></span><span>
+</span><a href="#local-6989586621679041650"><span class="hs-identifier hs-var">lbls</span></a></span><span>
 </span><span id="line-101"></span><span>
 </span><span id="line-102"></span><span class="hs-comment">-- | Represent a labelled vertical bar.</span><span>
 </span><span id="line-103"></span><span class="hs-keyword">data</span><span> </span><span id="Bar"><span class="annot"><a href="Plot.Text.Histogram.html#Bar"><span class="hs-identifier hs-var">Bar</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="Bar"><span class="annot"><a href="Plot.Text.Histogram.html#Bar"><span class="hs-identifier hs-var">Bar</span></a></span></span><span>
@@ -301,12 +301,12 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span id="line-108"></span><span>
 </span><span id="line-109"></span><span class="annot"><a href="Plot.Text.Histogram.html#bar"><span class="hs-identifier hs-type">bar</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Bar"><span class="hs-identifier hs-type">Bar</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-type">Plot</span></a></span><span>
 </span><span id="line-110"></span><span id="bar"><span class="annot"><span class="annottext">bar :: Bar -&gt; Plot
-</span><a href="Plot.Text.Histogram.html#bar"><span class="hs-identifier hs-var hs-var">bar</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Plot.Text.Histogram.html#Bar"><span class="hs-identifier hs-type">Bar</span></a></span><span> </span><span id="local-6989586621679041818"><span class="annot"><span class="annottext">w :: Int
-</span><a href="#local-6989586621679041818"><span class="hs-identifier hs-var">w</span></a></span></span><span> </span><span id="local-6989586621679041817"><span class="annot"><span class="annottext">h :: Int
-</span><a href="#local-6989586621679041817"><span class="hs-identifier hs-var">h</span></a></span></span><span> </span><span id="local-6989586621679041816"><span class="annot"><span class="annottext">l :: String
-</span><a href="#local-6989586621679041816"><span class="hs-identifier hs-var">l</span></a></span></span><span class="hs-special">)</span><span>
+</span><a href="Plot.Text.Histogram.html#bar"><span class="hs-identifier hs-var hs-var">bar</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Plot.Text.Histogram.html#Bar"><span class="hs-identifier hs-type">Bar</span></a></span><span> </span><span id="local-6989586621679041635"><span class="annot"><span class="annottext">w :: Int
+</span><a href="#local-6989586621679041635"><span class="hs-identifier hs-var">w</span></a></span></span><span> </span><span id="local-6989586621679041634"><span class="annot"><span class="annottext">h :: Int
+</span><a href="#local-6989586621679041634"><span class="hs-identifier hs-var">h</span></a></span></span><span> </span><span id="local-6989586621679041633"><span class="annot"><span class="annottext">l :: String
+</span><a href="#local-6989586621679041633"><span class="hs-identifier hs-var">l</span></a></span></span><span class="hs-special">)</span><span>
 </span><span id="line-111"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041817"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
+</span><a href="#local-6989586621679041634"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="hs-number">0</span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-112"></span><span>        </span><span class="annot"><span class="annottext">[String] -&gt; Plot
@@ -315,10 +315,10 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; String
 forall a. Int -&gt; a -&gt; [a]
 </span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041818"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">'&#9472;'</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; [String] -&gt; [String]
+</span><a href="#local-6989586621679041635"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">'&#9472;'</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; [String] -&gt; [String]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041813"><span class="hs-identifier hs-var">lbl</span></a></span><span>
+</span><a href="#local-6989586621679041630"><span class="hs-identifier hs-var">lbl</span></a></span><span>
 </span><span id="line-113"></span><span>
 </span><span id="line-114"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">otherwise</span></span><span> </span><span class="hs-glyph">=</span><span>
@@ -328,29 +328,29 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; ShowS
 forall e. Int -&gt; e -&gt; [e] -&gt; [e]
 </span><a href="Plot.Text.Histogram.html#padMiddle"><span class="hs-identifier hs-var">padMiddle</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041818"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">'&#9472;'</span></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9484;&#9488;&quot;</span></span><span> </span><span class="hs-special">]</span><span>
+</span><a href="#local-6989586621679041635"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">'&#9472;'</span></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9484;&#9488;&quot;</span></span><span> </span><span class="hs-special">]</span><span>
 </span><span id="line-116"></span><span>            </span><span class="annot"><span class="annottext">[String] -&gt; [String] -&gt; [String]
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="hs-special">(</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; ShowS
 forall e. Int -&gt; e -&gt; [e] -&gt; [e]
 </span><a href="Plot.Text.Histogram.html#padMiddle"><span class="hs-identifier hs-var">padMiddle</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041818"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">' '</span></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&#9474;&quot;</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; Int -&gt; [String]
+</span><a href="#local-6989586621679041635"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">' '</span></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&#9474;&quot;</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; Int -&gt; [String]
 forall e. e -&gt; Int -&gt; [e]
 </span><a href="Plot.Text.Histogram.html#.%2A"><span class="hs-operator hs-var">.*</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041817"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041634"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="hs-number">1</span></span><span class="hs-special">)</span><span> </span><span class="hs-special">)</span><span>
 </span><span id="line-117"></span><span>            </span><span class="annot"><span class="annottext">[String] -&gt; [String] -&gt; [String]
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041813"><span class="hs-identifier hs-var">lbl</span></a></span><span>
+</span><a href="#local-6989586621679041630"><span class="hs-identifier hs-var">lbl</span></a></span><span>
 </span><span id="line-118"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-119"></span><span>    </span><span id="local-6989586621679041813"><span class="annot"><span class="annottext">lbl :: [String]
-</span><a href="#local-6989586621679041813"><span class="hs-identifier hs-var hs-var">lbl</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; ShowS
+</span><span id="line-119"></span><span>    </span><span id="local-6989586621679041630"><span class="annot"><span class="annottext">lbl :: [String]
+</span><a href="#local-6989586621679041630"><span class="hs-identifier hs-var hs-var">lbl</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; ShowS
 forall e. Int -&gt; e -&gt; [e] -&gt; [e]
 </span><a href="Plot.Text.Histogram.html#padBoth"><span class="hs-identifier hs-var">padBoth</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041818"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">' '</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679041816"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="hs-special">]</span><span>
+</span><a href="#local-6989586621679041635"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">' '</span></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679041633"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="hs-special">]</span><span>
 </span><span id="line-120"></span><span>
 </span><span id="line-121"></span><span class="hs-comment">-- | Represent one mark on the y-axis.</span><span>
 </span><span id="line-122"></span><span class="hs-keyword">data</span><span> </span><span id="Axis"><span class="annot"><a href="Plot.Text.Histogram.html#Axis"><span class="hs-identifier hs-var">Axis</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="Axis"><span class="annot"><a href="Plot.Text.Histogram.html#Axis"><span class="hs-identifier hs-var">Axis</span></a></span></span><span>
@@ -364,42 +364,42 @@ forall e. Int -&gt; e -&gt; [e] -&gt; [e]
 </span><span id="line-128"></span><span id="axis"><span class="annot"><span class="annottext">axis :: Int -&gt; [Axis] -&gt; Plot
 </span><a href="Plot.Text.Histogram.html#axis"><span class="hs-identifier hs-var hs-var">axis</span></a></span></span><span> </span><span class="hs-identifier">_</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Plot
 </span><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-var">Plot</span></a></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
-</span><span id="line-129"></span><span class="annot"><a href="Plot.Text.Histogram.html#axis"><span class="hs-identifier hs-var">axis</span></a></span><span> </span><span id="local-6989586621679041807"><span class="annot"><span class="annottext">w :: Int
-</span><a href="#local-6989586621679041807"><span class="hs-identifier hs-var">w</span></a></span></span><span> </span><span id="local-6989586621679041806"><span class="annot"><span class="annottext">es :: [Axis]
-</span><a href="#local-6989586621679041806"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Plot
+</span><span id="line-129"></span><span class="annot"><a href="Plot.Text.Histogram.html#axis"><span class="hs-identifier hs-var">axis</span></a></span><span> </span><span id="local-6989586621679041624"><span class="annot"><span class="annottext">w :: Int
+</span><a href="#local-6989586621679041624"><span class="hs-identifier hs-var">w</span></a></span></span><span> </span><span id="local-6989586621679041623"><span class="annot"><span class="annottext">es :: [Axis]
+</span><a href="#local-6989586621679041623"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Plot
 </span><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-var">Plot</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(Axis -&gt; [String]) -&gt; [Axis] -&gt; [String]
 forall (t :: * -&gt; *) a b. Foldable t =&gt; (a -&gt; [b]) -&gt; t a -&gt; [b]
 </span><span class="hs-identifier hs-var">concatMap</span></span><span> </span><span class="annot"><span class="annottext">Axis -&gt; [String]
-</span><a href="#local-6989586621679041804"><span class="hs-identifier hs-var">each</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Axis] -&gt; [Axis]
+</span><a href="#local-6989586621679041621"><span class="hs-identifier hs-var">each</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Axis] -&gt; [Axis]
 forall a. [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">reverse</span></span><span> </span><span class="annot"><span class="annottext">[Axis]
-</span><a href="#local-6989586621679041806"><span class="hs-identifier hs-var">es</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; [String] -&gt; [String]
+</span><a href="#local-6989586621679041623"><span class="hs-identifier hs-var">es</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; [String] -&gt; [String]
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; String
 forall a. Int -&gt; a -&gt; [a]
 </span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041807"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">' '</span></span><span> </span><span class="hs-special">]</span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679041624"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">' '</span></span><span> </span><span class="hs-special">]</span><span class="hs-special">)</span><span>
 </span><span id="line-130"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-131"></span><span>    </span><span class="annot"><a href="#local-6989586621679041804"><span class="hs-identifier hs-type">each</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Axis"><span class="hs-identifier hs-type">Axis</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">]</span><span>
-</span><span id="line-132"></span><span>    </span><span id="local-6989586621679041804"><span class="annot"><span class="annottext">each :: Axis -&gt; [String]
-</span><a href="#local-6989586621679041804"><span class="hs-identifier hs-var hs-var">each</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Plot.Text.Histogram.html#Axis"><span class="hs-identifier hs-type">Axis</span></a></span><span> </span><span id="local-6989586621679041802"><span class="annot"><span class="annottext">h :: Int
-</span><a href="#local-6989586621679041802"><span class="hs-identifier hs-var">h</span></a></span></span><span> </span><span id="local-6989586621679041801"><span class="annot"><span class="annottext">l :: String
-</span><a href="#local-6989586621679041801"><span class="hs-identifier hs-var">l</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-131"></span><span>    </span><span class="annot"><a href="#local-6989586621679041621"><span class="hs-identifier hs-type">each</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Axis"><span class="hs-identifier hs-type">Axis</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">]</span><span>
+</span><span id="line-132"></span><span>    </span><span id="local-6989586621679041621"><span class="annot"><span class="annottext">each :: Axis -&gt; [String]
+</span><a href="#local-6989586621679041621"><span class="hs-identifier hs-var hs-var">each</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Plot.Text.Histogram.html#Axis"><span class="hs-identifier hs-type">Axis</span></a></span><span> </span><span id="local-6989586621679041619"><span class="annot"><span class="annottext">h :: Int
+</span><a href="#local-6989586621679041619"><span class="hs-identifier hs-var">h</span></a></span></span><span> </span><span id="local-6989586621679041618"><span class="annot"><span class="annottext">l :: String
+</span><a href="#local-6989586621679041618"><span class="hs-identifier hs-var">l</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-133"></span><span>        </span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; ShowS
 forall e. Int -&gt; e -&gt; [e] -&gt; [e]
 </span><a href="Plot.Text.Histogram.html#padLeft"><span class="hs-identifier hs-var">padLeft</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041807"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">' '</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679041801"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; ShowS
+</span><a href="#local-6989586621679041624"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">' '</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679041618"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; ShowS
 forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="hs-string">&quot; &#9508; &quot;</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">String -&gt; [String] -&gt; [String]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; String -&gt; [String]
 forall a. Int -&gt; a -&gt; [a]
 </span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041802"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; ShowS
+</span><a href="#local-6989586621679041619"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; ShowS
 forall e. Int -&gt; e -&gt; [e] -&gt; [e]
 </span><a href="Plot.Text.Histogram.html#padLeft"><span class="hs-identifier hs-var">padLeft</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041807"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">' '</span></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474; &quot;</span></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679041624"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="hs-char">' '</span></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474; &quot;</span></span><span class="hs-special">)</span><span>
 </span><span id="line-134"></span><span>
 </span><span id="line-135"></span><span class="hs-comment">--</span><span>
 </span><span id="line-136"></span><span class="hs-comment">-- Plot</span><span>
@@ -413,156 +413,156 @@ forall e. Int -&gt; e -&gt; [e] -&gt; [e]
 </span><span id="line-144"></span><span class="hs-keyword">newtype</span><span> </span><span id="Plot"><span class="annot"><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-var">Plot</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="Plot"><span class="annot"><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-var">Plot</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="%24sel%3AgetPlot%3APlot"><span class="annot"><span class="annottext">Plot -&gt; [String]
 </span><a href="Plot.Text.Histogram.html#%24sel%3AgetPlot%3APlot"><span class="hs-identifier hs-var hs-var">getPlot</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">]</span><span> </span><span class="hs-special">}</span><span>
 </span><span id="line-145"></span><span>
-</span><span id="line-146"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679041795"><span id="local-6989586621679041797"><span class="annot"><span class="hs-identifier hs-type">Semigroup</span></span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-type">Plot</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-147"></span><span>    </span><span class="annot"><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-type">Plot</span></a></span><span> </span><span id="local-6989586621679041793"><span class="annot"><span class="annottext">xs :: [String]
-</span><a href="#local-6989586621679041793"><span class="hs-identifier hs-var">xs</span></a></span></span><span> </span><span id="local-6989586621679041792"><span class="annot"><span class="annottext">&lt;&gt; :: Plot -&gt; Plot -&gt; Plot
-</span><span class="hs-operator hs-var hs-var hs-var hs-var">&lt;&gt;</span></span></span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-type">Plot</span></a></span><span> </span><span id="local-6989586621679041791"><span class="annot"><span class="annottext">ys :: [String]
-</span><a href="#local-6989586621679041791"><span class="hs-identifier hs-var">ys</span></a></span></span><span>
+</span><span id="line-146"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679041612"><span id="local-6989586621679041614"><span class="annot"><span class="hs-identifier hs-type">Semigroup</span></span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-type">Plot</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-147"></span><span>    </span><span class="annot"><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-type">Plot</span></a></span><span> </span><span id="local-6989586621679041610"><span class="annot"><span class="annottext">xs :: [String]
+</span><a href="#local-6989586621679041610"><span class="hs-identifier hs-var">xs</span></a></span></span><span> </span><span id="local-6989586621679041609"><span class="annot"><span class="annottext">&lt;&gt; :: Plot -&gt; Plot -&gt; Plot
+</span><span class="hs-operator hs-var hs-var hs-var hs-var">&lt;&gt;</span></span></span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-type">Plot</span></a></span><span> </span><span id="local-6989586621679041608"><span class="annot"><span class="annottext">ys :: [String]
+</span><a href="#local-6989586621679041608"><span class="hs-identifier hs-var">ys</span></a></span></span><span>
 </span><span id="line-148"></span><span>        </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041793"><span class="hs-identifier hs-var">xs</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
+</span><a href="#local-6989586621679041610"><span class="hs-identifier hs-var">xs</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
 forall a. Ord a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">&gt;</span></span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041791"><span class="hs-identifier hs-var">ys</span></a></span><span> </span><span class="hs-glyph">=</span><span>
-</span><span id="line-149"></span><span>            </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679041789"><span class="annot"><span class="annottext">ys' :: [String]
-</span><a href="#local-6989586621679041789"><span class="hs-identifier hs-var hs-var">ys'</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; [String] -&gt; [String]
+</span><a href="#local-6989586621679041608"><span class="hs-identifier hs-var">ys</span></a></span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-149"></span><span>            </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679041606"><span class="annot"><span class="annottext">ys' :: [String]
+</span><a href="#local-6989586621679041606"><span class="hs-identifier hs-var hs-var">ys'</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; [String] -&gt; [String]
 </span><a href="Plot.Text.Histogram.html#fill"><span class="hs-identifier hs-var">fill</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041787"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041604"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041786"><span class="hs-identifier hs-var">y</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041791"><span class="hs-identifier hs-var">ys</span></a></span><span> </span><span class="hs-keyword">in</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Plot
+</span><a href="#local-6989586621679041603"><span class="hs-identifier hs-var">y</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[String]
+</span><a href="#local-6989586621679041608"><span class="hs-identifier hs-var">ys</span></a></span><span> </span><span class="hs-keyword">in</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Plot
 </span><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-var">Plot</span></a></span><span> </span><span class="annot"><span class="annottext">([String] -&gt; Plot) -&gt; [String] -&gt; Plot
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">(String -&gt; ShowS) -&gt; [String] -&gt; [String] -&gt; [String]
 forall a b c. (a -&gt; b -&gt; c) -&gt; [a] -&gt; [b] -&gt; [c]
 </span><span class="hs-identifier hs-var">zipWith</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; ShowS
-</span><a href="#local-6989586621679041784"><span class="hs-identifier hs-var">merge</span></a></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041793"><span class="hs-identifier hs-var">xs</span></a></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041789"><span class="hs-identifier hs-var">ys'</span></a></span><span>
+</span><a href="#local-6989586621679041601"><span class="hs-identifier hs-var">merge</span></a></span><span> </span><span class="annot"><span class="annottext">[String]
+</span><a href="#local-6989586621679041610"><span class="hs-identifier hs-var">xs</span></a></span><span> </span><span class="annot"><span class="annottext">[String]
+</span><a href="#local-6989586621679041606"><span class="hs-identifier hs-var">ys'</span></a></span><span>
 </span><span id="line-150"></span><span>
 </span><span id="line-151"></span><span>        </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">otherwise</span></span><span> </span><span class="hs-glyph">=</span><span>
-</span><span id="line-152"></span><span>            </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679041783"><span class="annot"><span class="annottext">xs' :: [String]
-</span><a href="#local-6989586621679041783"><span class="hs-identifier hs-var hs-var">xs'</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; [String] -&gt; [String]
+</span><span id="line-152"></span><span>            </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679041600"><span class="annot"><span class="annottext">xs' :: [String]
+</span><a href="#local-6989586621679041600"><span class="hs-identifier hs-var hs-var">xs'</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; [String] -&gt; [String]
 </span><a href="Plot.Text.Histogram.html#fill"><span class="hs-identifier hs-var">fill</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041786"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041603"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041787"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041793"><span class="hs-identifier hs-var">xs</span></a></span><span> </span><span class="hs-keyword">in</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Plot
+</span><a href="#local-6989586621679041604"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[String]
+</span><a href="#local-6989586621679041610"><span class="hs-identifier hs-var">xs</span></a></span><span> </span><span class="hs-keyword">in</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Plot
 </span><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-var">Plot</span></a></span><span> </span><span class="annot"><span class="annottext">([String] -&gt; Plot) -&gt; [String] -&gt; Plot
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">(String -&gt; ShowS) -&gt; [String] -&gt; [String] -&gt; [String]
 forall a b c. (a -&gt; b -&gt; c) -&gt; [a] -&gt; [b] -&gt; [c]
 </span><span class="hs-identifier hs-var">zipWith</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; ShowS
-</span><a href="#local-6989586621679041784"><span class="hs-identifier hs-var">merge</span></a></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041783"><span class="hs-identifier hs-var">xs'</span></a></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041791"><span class="hs-identifier hs-var">ys</span></a></span><span>
+</span><a href="#local-6989586621679041601"><span class="hs-identifier hs-var">merge</span></a></span><span> </span><span class="annot"><span class="annottext">[String]
+</span><a href="#local-6989586621679041600"><span class="hs-identifier hs-var">xs'</span></a></span><span> </span><span class="annot"><span class="annottext">[String]
+</span><a href="#local-6989586621679041608"><span class="hs-identifier hs-var">ys</span></a></span><span>
 </span><span id="line-153"></span><span>      </span><span class="hs-keyword">where</span><span>
-</span><span id="line-154"></span><span>        </span><span class="hs-special">(</span><span id="local-6989586621679041787"><span class="annot"><span class="annottext">x :: Int
-</span><a href="#local-6989586621679041787"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679041786"><span class="annot"><span class="annottext">y :: Int
-</span><a href="#local-6989586621679041786"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[String] -&gt; Int
+</span><span id="line-154"></span><span>        </span><span class="hs-special">(</span><span id="local-6989586621679041604"><span class="annot"><span class="annottext">x :: Int
+</span><a href="#local-6989586621679041604"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679041603"><span class="annot"><span class="annottext">y :: Int
+</span><a href="#local-6989586621679041603"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[String] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041793"><span class="hs-identifier hs-var">xs</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Int
+</span><a href="#local-6989586621679041610"><span class="hs-identifier hs-var">xs</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041791"><span class="hs-identifier hs-var">ys</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679041608"><span class="hs-identifier hs-var">ys</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-155"></span><span>
-</span><span id="line-156"></span><span>        </span><span id="local-6989586621679041784"><span class="annot"><span class="annottext">merge :: String -&gt; ShowS
-</span><a href="#local-6989586621679041784"><span class="hs-identifier hs-var hs-var">merge</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span id="local-6989586621679041782"><span class="annot"><span class="annottext">ys :: String
-</span><a href="#local-6989586621679041782"><span class="hs-identifier hs-var">ys</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679041782"><span class="hs-identifier hs-var">ys</span></a></span><span>
-</span><span id="line-157"></span><span>        </span><span class="annot"><a href="#local-6989586621679041784"><span class="hs-identifier hs-var">merge</span></a></span><span> </span><span id="local-6989586621679041781"><span class="annot"><span class="annottext">xs :: String
-</span><a href="#local-6989586621679041781"><span class="hs-identifier hs-var">xs</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679041781"><span class="hs-identifier hs-var">xs</span></a></span><span>
-</span><span id="line-158"></span><span>        </span><span class="annot"><a href="#local-6989586621679041784"><span class="hs-identifier hs-var">merge</span></a></span><span> </span><span id="local-6989586621679041780"><span class="annot"><span class="annottext">xs :: String
-</span><a href="#local-6989586621679041780"><span class="hs-identifier hs-var">xs</span></a></span></span><span> </span><span id="local-6989586621679041779"><span class="annot"><span class="annottext">ys :: String
-</span><a href="#local-6989586621679041779"><span class="hs-identifier hs-var">ys</span></a></span></span><span>
+</span><span id="line-156"></span><span>        </span><span id="local-6989586621679041601"><span class="annot"><span class="annottext">merge :: String -&gt; ShowS
+</span><a href="#local-6989586621679041601"><span class="hs-identifier hs-var hs-var">merge</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span id="local-6989586621679041599"><span class="annot"><span class="annottext">ys :: String
+</span><a href="#local-6989586621679041599"><span class="hs-identifier hs-var">ys</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679041599"><span class="hs-identifier hs-var">ys</span></a></span><span>
+</span><span id="line-157"></span><span>        </span><span class="annot"><a href="#local-6989586621679041601"><span class="hs-identifier hs-var">merge</span></a></span><span> </span><span id="local-6989586621679041598"><span class="annot"><span class="annottext">xs :: String
+</span><a href="#local-6989586621679041598"><span class="hs-identifier hs-var">xs</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679041598"><span class="hs-identifier hs-var">xs</span></a></span><span>
+</span><span id="line-158"></span><span>        </span><span class="annot"><a href="#local-6989586621679041601"><span class="hs-identifier hs-var">merge</span></a></span><span> </span><span id="local-6989586621679041597"><span class="annot"><span class="annottext">xs :: String
+</span><a href="#local-6989586621679041597"><span class="hs-identifier hs-var">xs</span></a></span></span><span> </span><span id="local-6989586621679041596"><span class="annot"><span class="annottext">ys :: String
+</span><a href="#local-6989586621679041596"><span class="hs-identifier hs-var">ys</span></a></span></span><span>
 </span><span id="line-159"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&#9474;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&#9474;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&quot;</span></span><span>
 </span><span id="line-160"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&#9484;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9500;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&#9484;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9500;&quot;</span></span><span>
 </span><span id="line-161"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474; &quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474; &quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&quot;</span></span><span>
 </span><span id="line-162"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9488;&#9474;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9508;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9488;&#9474;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9508;&quot;</span></span><span>
 </span><span id="line-163"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9488;&#9484;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9516;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9488;&#9484;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9516;&quot;</span></span><span>
 </span><span id="line-164"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9488; &quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9488;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9488; &quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9488;&quot;</span></span><span>
 </span><span id="line-165"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot; &#9474;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot; &#9474;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&quot;</span></span><span>
 </span><span id="line-166"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot; &#9484;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9484;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot; &#9484;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9484;&quot;</span></span><span>
 </span><span id="line-167"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9472;&#9474;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9496;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9472;&#9474;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9496;&quot;</span></span><span>
 </span><span id="line-168"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&#9472;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9492;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9474;&#9472;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9492;&quot;</span></span><span>
 </span><span id="line-169"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9472;&#9472;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9472;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9472;&#9472;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9472;&quot;</span></span><span>
 </span><span id="line-170"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9516;&#9472;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9516;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9516;&#9472;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9516;&quot;</span></span><span>
 </span><span id="line-171"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9488;&#9472;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9472;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9488;&#9472;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9472;&quot;</span></span><span>
 </span><span id="line-172"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9472;&#9484;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9472;&quot;</span></span><span>
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var">match</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9472;&#9484;&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot;&#9472;&quot;</span></span><span>
 </span><span id="line-173"></span><span>            </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">otherwise</span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot; &quot;</span></span><span>
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var">into</span></a></span><span> </span><span class="annot"><span class="hs-string">&quot; &quot;</span></span><span>
 </span><span id="line-174"></span><span>          </span><span class="hs-keyword">where</span><span>
-</span><span id="line-175"></span><span>            </span><span id="local-6989586621679041778"><span class="annot"><span class="annottext">match :: String -&gt; Bool
-</span><a href="#local-6989586621679041778"><span class="hs-identifier hs-var hs-var">match</span></a></span></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679041776"><span class="annot"><span class="annottext">a :: Char
-</span><a href="#local-6989586621679041776"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679041775"><span class="annot"><span class="annottext">b :: Char
-</span><a href="#local-6989586621679041775"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Char
+</span><span id="line-175"></span><span>            </span><span id="local-6989586621679041595"><span class="annot"><span class="annottext">match :: String -&gt; Bool
+</span><a href="#local-6989586621679041595"><span class="hs-identifier hs-var hs-var">match</span></a></span></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679041593"><span class="annot"><span class="annottext">a :: Char
+</span><a href="#local-6989586621679041593"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679041592"><span class="annot"><span class="annottext">b :: Char
+</span><a href="#local-6989586621679041592"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Char
 forall a. [a] -&gt; a
 </span><span class="hs-identifier hs-var">last</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679041780"><span class="hs-identifier hs-var">xs</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char -&gt; Bool
+</span><a href="#local-6989586621679041597"><span class="hs-identifier hs-var">xs</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679041776"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Bool -&gt; Bool -&gt; Bool
+</span><a href="#local-6989586621679041593"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Bool -&gt; Bool -&gt; Bool
 </span><span class="hs-operator hs-var">&amp;&amp;</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; Char
 forall a. [a] -&gt; a
 </span><span class="hs-identifier hs-var">head</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679041779"><span class="hs-identifier hs-var">ys</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char -&gt; Bool
+</span><a href="#local-6989586621679041596"><span class="hs-identifier hs-var">ys</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679041775"><span class="hs-identifier hs-var">b</span></a></span><span>
-</span><span id="line-176"></span><span>            </span><span id="local-6989586621679041777"><span class="annot"><span class="annottext">into :: ShowS
-</span><a href="#local-6989586621679041777"><span class="hs-identifier hs-var hs-var">into</span></a></span></span><span> </span><span id="local-6989586621679041771"><span class="annot"><span class="annottext">s :: String
-</span><a href="#local-6989586621679041771"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
+</span><a href="#local-6989586621679041592"><span class="hs-identifier hs-var">b</span></a></span><span>
+</span><span id="line-176"></span><span>            </span><span id="local-6989586621679041594"><span class="annot"><span class="annottext">into :: ShowS
+</span><a href="#local-6989586621679041594"><span class="hs-identifier hs-var hs-var">into</span></a></span></span><span> </span><span id="local-6989586621679041588"><span class="annot"><span class="annottext">s :: String
+</span><a href="#local-6989586621679041588"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ShowS
 forall a. [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">init</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679041780"><span class="hs-identifier hs-var">xs</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; ShowS
+</span><a href="#local-6989586621679041597"><span class="hs-identifier hs-var">xs</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; ShowS
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679041771"><span class="hs-identifier hs-var">s</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; ShowS
+</span><a href="#local-6989586621679041588"><span class="hs-identifier hs-var">s</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; ShowS
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">ShowS
 forall a. [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">tail</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679041779"><span class="hs-identifier hs-var">ys</span></a></span><span>
+</span><a href="#local-6989586621679041596"><span class="hs-identifier hs-var">ys</span></a></span><span>
 </span><span id="line-177"></span><span>
-</span><span id="line-178"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679041763"><span id="local-6989586621679041765"><span class="annot"><span class="hs-identifier hs-type">Monoid</span></span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-type">Plot</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-179"></span><span>    </span><span id="local-6989586621679041761"><span class="annot"><span class="annottext">mempty :: Plot
+</span><span id="line-178"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621679041580"><span id="local-6989586621679041582"><span class="annot"><span class="hs-identifier hs-type">Monoid</span></span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-type">Plot</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-179"></span><span>    </span><span id="local-6989586621679041578"><span class="annot"><span class="annottext">mempty :: Plot
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var">mempty</span></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Plot
 </span><a href="Plot.Text.Histogram.html#Plot"><span class="hs-identifier hs-var">Plot</span></a></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
 </span><span id="line-180"></span><span>
@@ -572,7 +572,7 @@ forall a. [a] -&gt; [a]
 </span><span id="line-184"></span><span>
 </span><span id="line-185"></span><span class="hs-keyword">infixl</span><span> </span><span class="hs-number">5</span><span> </span><span class="annot"><a href="Plot.Text.Histogram.html#.%2A"><span class="hs-operator hs-type">.*</span></a></span><span>
 </span><span id="line-186"></span><span>
-</span><span id="line-187"></span><span id="local-6989586621679041902"><span class="annot"><a href="Plot.Text.Histogram.html#.%2A"><span class="hs-operator hs-type">(.*)</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="#local-6989586621679041902"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041902"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span></span><span>
+</span><span id="line-187"></span><span id="local-6989586621679041719"><span class="annot"><a href="Plot.Text.Histogram.html#.%2A"><span class="hs-operator hs-type">(.*)</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="#local-6989586621679041719"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041719"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span></span><span>
 </span><span id="line-188"></span><span id=".%2A"><span class="annot"><span class="annottext">.* :: e -&gt; Int -&gt; [e]
 </span><a href="Plot.Text.Histogram.html#.%2A"><span class="hs-operator hs-var hs-var">(.*)</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Int -&gt; e -&gt; [e]) -&gt; e -&gt; Int -&gt; [e]
 forall a b c. (a -&gt; b -&gt; c) -&gt; b -&gt; a -&gt; c
@@ -580,7 +580,7 @@ forall a b c. (a -&gt; b -&gt; c) -&gt; b -&gt; a -&gt; c
 forall a. Int -&gt; a -&gt; [a]
 </span><span class="hs-identifier hs-var">replicate</span></span><span>
 </span><span id="line-189"></span><span>
-</span><span id="line-190"></span><span id="local-6989586621679041908"><span class="annot"><a href="Plot.Text.Histogram.html#double"><span class="hs-identifier hs-type">double</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Real</span></span><span> </span><span class="annot"><a href="#local-6989586621679041908"><span class="hs-identifier hs-type">i</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679041908"><span class="hs-identifier hs-type">i</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span></span><span>
+</span><span id="line-190"></span><span id="local-6989586621679041725"><span class="annot"><a href="Plot.Text.Histogram.html#double"><span class="hs-identifier hs-type">double</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Real</span></span><span> </span><span class="annot"><a href="#local-6989586621679041725"><span class="hs-identifier hs-type">i</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679041725"><span class="hs-identifier hs-type">i</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span></span><span>
 </span><span id="line-191"></span><span id="double"><span class="annot"><span class="annottext">double :: i -&gt; Double
 </span><a href="Plot.Text.Histogram.html#double"><span class="hs-identifier hs-var hs-var">double</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Rational -&gt; Double
 forall a. Fractional a =&gt; Rational -&gt; a
@@ -590,164 +590,164 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 forall a. Real a =&gt; a -&gt; Rational
 </span><span class="hs-identifier hs-var">toRational</span></span><span>
 </span><span id="line-192"></span><span>
-</span><span id="line-193"></span><span id="local-6989586621679041759"><span class="annot"><a href="Plot.Text.Histogram.html#padRight"><span class="hs-identifier hs-type">padRight</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679041759"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041759"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041759"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span></span><span>
+</span><span id="line-193"></span><span id="local-6989586621679041576"><span class="annot"><a href="Plot.Text.Histogram.html#padRight"><span class="hs-identifier hs-type">padRight</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679041576"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041576"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041576"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span></span><span>
 </span><span id="line-194"></span><span id="padRight"><span class="annot"><span class="annottext">padRight :: Int -&gt; e -&gt; [e] -&gt; [e]
-</span><a href="Plot.Text.Histogram.html#padRight"><span class="hs-identifier hs-var hs-var">padRight</span></a></span></span><span> </span><span id="local-6989586621679041757"><span class="annot"><span class="annottext">n :: Int
-</span><a href="#local-6989586621679041757"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span id="local-6989586621679041756"><span class="annot"><span class="annottext">e :: e
-</span><a href="#local-6989586621679041756"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span id="local-6989586621679041755"><span class="annot"><span class="annottext">es :: [e]
-</span><a href="#local-6989586621679041755"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Plot.Text.Histogram.html#padRight"><span class="hs-identifier hs-var hs-var">padRight</span></a></span></span><span> </span><span id="local-6989586621679041574"><span class="annot"><span class="annottext">n :: Int
+</span><a href="#local-6989586621679041574"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span id="local-6989586621679041573"><span class="annot"><span class="annottext">e :: e
+</span><a href="#local-6989586621679041573"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span id="local-6989586621679041572"><span class="annot"><span class="annottext">es :: [e]
+</span><a href="#local-6989586621679041572"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-195"></span><span>    </span><span class="annot"><span class="annottext">[e]
-</span><a href="#local-6989586621679041755"><span class="hs-identifier hs-var">es</span></a></span><span> </span><span class="annot"><span class="annottext">[e] -&gt; [e] -&gt; [e]
+</span><a href="#local-6989586621679041572"><span class="hs-identifier hs-var">es</span></a></span><span> </span><span class="annot"><span class="annottext">[e] -&gt; [e] -&gt; [e]
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; e -&gt; [e]
 forall a. Int -&gt; a -&gt; [a]
 </span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041757"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041574"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">[e] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[e]
-</span><a href="#local-6989586621679041755"><span class="hs-identifier hs-var">es</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">e
-</span><a href="#local-6989586621679041756"><span class="hs-identifier hs-var">e</span></a></span><span>
+</span><a href="#local-6989586621679041572"><span class="hs-identifier hs-var">es</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">e
+</span><a href="#local-6989586621679041573"><span class="hs-identifier hs-var">e</span></a></span><span>
 </span><span id="line-196"></span><span>
-</span><span id="line-197"></span><span id="local-6989586621679041754"><span class="annot"><a href="Plot.Text.Histogram.html#padLeft"><span class="hs-identifier hs-type">padLeft</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679041754"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041754"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041754"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span></span><span>
+</span><span id="line-197"></span><span id="local-6989586621679041571"><span class="annot"><a href="Plot.Text.Histogram.html#padLeft"><span class="hs-identifier hs-type">padLeft</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679041571"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041571"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041571"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span></span><span>
 </span><span id="line-198"></span><span id="padLeft"><span class="annot"><span class="annottext">padLeft :: Int -&gt; e -&gt; [e] -&gt; [e]
-</span><a href="Plot.Text.Histogram.html#padLeft"><span class="hs-identifier hs-var hs-var">padLeft</span></a></span></span><span> </span><span id="local-6989586621679041753"><span class="annot"><span class="annottext">n :: Int
-</span><a href="#local-6989586621679041753"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span id="local-6989586621679041752"><span class="annot"><span class="annottext">e :: e
-</span><a href="#local-6989586621679041752"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span id="local-6989586621679041751"><span class="annot"><span class="annottext">es :: [e]
-</span><a href="#local-6989586621679041751"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Plot.Text.Histogram.html#padLeft"><span class="hs-identifier hs-var hs-var">padLeft</span></a></span></span><span> </span><span id="local-6989586621679041570"><span class="annot"><span class="annottext">n :: Int
+</span><a href="#local-6989586621679041570"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span id="local-6989586621679041569"><span class="annot"><span class="annottext">e :: e
+</span><a href="#local-6989586621679041569"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span id="local-6989586621679041568"><span class="annot"><span class="annottext">es :: [e]
+</span><a href="#local-6989586621679041568"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-199"></span><span>    </span><span class="annot"><span class="annottext">Int -&gt; e -&gt; [e]
 forall a. Int -&gt; a -&gt; [a]
 </span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041753"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041570"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">[e] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[e]
-</span><a href="#local-6989586621679041751"><span class="hs-identifier hs-var">es</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">e
-</span><a href="#local-6989586621679041752"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">[e] -&gt; [e] -&gt; [e]
+</span><a href="#local-6989586621679041568"><span class="hs-identifier hs-var">es</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">e
+</span><a href="#local-6989586621679041569"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">[e] -&gt; [e] -&gt; [e]
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">[e]
-</span><a href="#local-6989586621679041751"><span class="hs-identifier hs-var">es</span></a></span><span>
+</span><a href="#local-6989586621679041568"><span class="hs-identifier hs-var">es</span></a></span><span>
 </span><span id="line-200"></span><span>
-</span><span id="line-201"></span><span id="local-6989586621679041750"><span class="annot"><a href="Plot.Text.Histogram.html#padBoth"><span class="hs-identifier hs-type">padBoth</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679041750"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041750"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041750"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span></span><span>
+</span><span id="line-201"></span><span id="local-6989586621679041567"><span class="annot"><a href="Plot.Text.Histogram.html#padBoth"><span class="hs-identifier hs-type">padBoth</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679041567"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041567"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041567"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span></span><span>
 </span><span id="line-202"></span><span id="padBoth"><span class="annot"><span class="annottext">padBoth :: Int -&gt; e -&gt; [e] -&gt; [e]
-</span><a href="Plot.Text.Histogram.html#padBoth"><span class="hs-identifier hs-var hs-var">padBoth</span></a></span></span><span> </span><span id="local-6989586621679041749"><span class="annot"><span class="annottext">n :: Int
-</span><a href="#local-6989586621679041749"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span id="local-6989586621679041748"><span class="annot"><span class="annottext">e :: e
-</span><a href="#local-6989586621679041748"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span id="local-6989586621679041747"><span class="annot"><span class="annottext">es :: [e]
-</span><a href="#local-6989586621679041747"><span class="hs-identifier hs-var">es</span></a></span></span><span>
+</span><a href="Plot.Text.Histogram.html#padBoth"><span class="hs-identifier hs-var hs-var">padBoth</span></a></span></span><span> </span><span id="local-6989586621679041566"><span class="annot"><span class="annottext">n :: Int
+</span><a href="#local-6989586621679041566"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span id="local-6989586621679041565"><span class="annot"><span class="annottext">e :: e
+</span><a href="#local-6989586621679041565"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span id="local-6989586621679041564"><span class="annot"><span class="annottext">es :: [e]
+</span><a href="#local-6989586621679041564"><span class="hs-identifier hs-var">es</span></a></span></span><span>
 </span><span id="line-203"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041746"><span class="hs-identifier hs-var">len</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
+</span><a href="#local-6989586621679041563"><span class="hs-identifier hs-var">len</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
 forall a. Ord a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">&gt;=</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041749"><span class="hs-identifier hs-var">n</span></a></span><span>         </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[e]
-</span><a href="#local-6989586621679041747"><span class="hs-identifier hs-var">es</span></a></span><span>
+</span><a href="#local-6989586621679041566"><span class="hs-identifier hs-var">n</span></a></span><span>         </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[e]
+</span><a href="#local-6989586621679041564"><span class="hs-identifier hs-var">es</span></a></span><span>
 </span><span id="line-204"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041746"><span class="hs-identifier hs-var">len</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041563"><span class="hs-identifier hs-var">len</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Integral a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">`mod`</span></span><span> </span><span class="annot"><span class="hs-number">2</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="hs-number">0</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; e -&gt; [e] -&gt; [e]
 forall e. Int -&gt; e -&gt; [e] -&gt; [e]
 </span><a href="Plot.Text.Histogram.html#padBoth"><span class="hs-identifier hs-var">padBoth</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041749"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">e
-</span><a href="#local-6989586621679041748"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">([e] -&gt; [e]) -&gt; [e] -&gt; [e]
+</span><a href="#local-6989586621679041566"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">e
+</span><a href="#local-6989586621679041565"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">([e] -&gt; [e]) -&gt; [e] -&gt; [e]
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; e -&gt; [e] -&gt; [e]
 forall e. Int -&gt; e -&gt; [e] -&gt; [e]
 </span><a href="Plot.Text.Histogram.html#padRight"><span class="hs-identifier hs-var">padRight</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041746"><span class="hs-identifier hs-var">len</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041563"><span class="hs-identifier hs-var">len</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="hs-number">1</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">e
-</span><a href="#local-6989586621679041748"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">[e]
-</span><a href="#local-6989586621679041747"><span class="hs-identifier hs-var">es</span></a></span><span>
+</span><a href="#local-6989586621679041565"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">[e]
+</span><a href="#local-6989586621679041564"><span class="hs-identifier hs-var">es</span></a></span><span>
 </span><span id="line-205"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">otherwise</span></span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; e -&gt; [e] -&gt; [e]
 forall e. Int -&gt; e -&gt; [e] -&gt; [e]
 </span><a href="Plot.Text.Histogram.html#padBoth"><span class="hs-identifier hs-var">padBoth</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041749"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">e
-</span><a href="#local-6989586621679041748"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">([e] -&gt; [e]) -&gt; [e] -&gt; [e]
+</span><a href="#local-6989586621679041566"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">e
+</span><a href="#local-6989586621679041565"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">([e] -&gt; [e]) -&gt; [e] -&gt; [e]
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; e -&gt; [e] -&gt; [e]
 forall e. Int -&gt; e -&gt; [e] -&gt; [e]
 </span><a href="Plot.Text.Histogram.html#padLeft"><span class="hs-identifier hs-var">padLeft</span></a></span><span>  </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041746"><span class="hs-identifier hs-var">len</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041563"><span class="hs-identifier hs-var">len</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="hs-number">1</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">e
-</span><a href="#local-6989586621679041748"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">[e]
-</span><a href="#local-6989586621679041747"><span class="hs-identifier hs-var">es</span></a></span><span>
+</span><a href="#local-6989586621679041565"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">[e]
+</span><a href="#local-6989586621679041564"><span class="hs-identifier hs-var">es</span></a></span><span>
 </span><span id="line-206"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-207"></span><span>    </span><span id="local-6989586621679041746"><span class="annot"><span class="annottext">len :: Int
-</span><a href="#local-6989586621679041746"><span class="hs-identifier hs-var hs-var">len</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[e] -&gt; Int
+</span><span id="line-207"></span><span>    </span><span id="local-6989586621679041563"><span class="annot"><span class="annottext">len :: Int
+</span><a href="#local-6989586621679041563"><span class="hs-identifier hs-var hs-var">len</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[e] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[e]
-</span><a href="#local-6989586621679041747"><span class="hs-identifier hs-var">es</span></a></span><span>
+</span><a href="#local-6989586621679041564"><span class="hs-identifier hs-var">es</span></a></span><span>
 </span><span id="line-208"></span><span>
-</span><span id="line-209"></span><span id="local-6989586621679041904"><span class="annot"><a href="Plot.Text.Histogram.html#padMiddle"><span class="hs-identifier hs-type">padMiddle</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679041904"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041904"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041904"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span></span><span>
+</span><span id="line-209"></span><span id="local-6989586621679041721"><span class="annot"><a href="Plot.Text.Histogram.html#padMiddle"><span class="hs-identifier hs-type">padMiddle</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679041721"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041721"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679041721"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">]</span></span><span>
 </span><span id="line-210"></span><span id="padMiddle"><span class="annot"><span class="annottext">padMiddle :: Int -&gt; e -&gt; [e] -&gt; [e]
-</span><a href="Plot.Text.Histogram.html#padMiddle"><span class="hs-identifier hs-var hs-var">padMiddle</span></a></span></span><span> </span><span id="local-6989586621679041744"><span class="annot"><span class="annottext">n :: Int
-</span><a href="#local-6989586621679041744"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span id="local-6989586621679041743"><span class="annot"><span class="annottext">e :: e
-</span><a href="#local-6989586621679041743"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span id="local-6989586621679041742"><span class="annot"><span class="annottext">es :: [e]
-</span><a href="#local-6989586621679041742"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Plot.Text.Histogram.html#padMiddle"><span class="hs-identifier hs-var hs-var">padMiddle</span></a></span></span><span> </span><span id="local-6989586621679041561"><span class="annot"><span class="annottext">n :: Int
+</span><a href="#local-6989586621679041561"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span id="local-6989586621679041560"><span class="annot"><span class="annottext">e :: e
+</span><a href="#local-6989586621679041560"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span id="local-6989586621679041559"><span class="annot"><span class="annottext">es :: [e]
+</span><a href="#local-6989586621679041559"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-211"></span><span>    </span><span class="annot"><span class="annottext">Int -&gt; [e] -&gt; [e]
 forall a. Int -&gt; [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">take</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041740"><span class="hs-identifier hs-var">half</span></a></span><span> </span><span class="annot"><span class="annottext">[e]
-</span><a href="#local-6989586621679041742"><span class="hs-identifier hs-var">es</span></a></span><span> </span><span class="annot"><span class="annottext">[e] -&gt; [e] -&gt; [e]
+</span><a href="#local-6989586621679041557"><span class="hs-identifier hs-var">half</span></a></span><span> </span><span class="annot"><span class="annottext">[e]
+</span><a href="#local-6989586621679041559"><span class="hs-identifier hs-var">es</span></a></span><span> </span><span class="annot"><span class="annottext">[e] -&gt; [e] -&gt; [e]
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; e -&gt; [e]
 forall a. Int -&gt; a -&gt; [a]
 </span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041739"><span class="hs-identifier hs-var">&#948;</span></a></span><span> </span><span class="annot"><span class="annottext">e
-</span><a href="#local-6989586621679041743"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">[e] -&gt; [e] -&gt; [e]
+</span><a href="#local-6989586621679041556"><span class="hs-identifier hs-var">&#948;</span></a></span><span> </span><span class="annot"><span class="annottext">e
+</span><a href="#local-6989586621679041560"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">[e] -&gt; [e] -&gt; [e]
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; [e] -&gt; [e]
 forall a. Int -&gt; [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">drop</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041740"><span class="hs-identifier hs-var">half</span></a></span><span> </span><span class="annot"><span class="annottext">[e]
-</span><a href="#local-6989586621679041742"><span class="hs-identifier hs-var">es</span></a></span><span>
+</span><a href="#local-6989586621679041557"><span class="hs-identifier hs-var">half</span></a></span><span> </span><span class="annot"><span class="annottext">[e]
+</span><a href="#local-6989586621679041559"><span class="hs-identifier hs-var">es</span></a></span><span>
 </span><span id="line-212"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-213"></span><span>    </span><span id="local-6989586621679041739"><span class="annot"><span class="annottext">&#948; :: Int
-</span><a href="#local-6989586621679041739"><span class="hs-identifier hs-var hs-var">&#948;</span></a></span></span><span>    </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041744"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><span id="line-213"></span><span>    </span><span id="local-6989586621679041556"><span class="annot"><span class="annottext">&#948; :: Int
+</span><a href="#local-6989586621679041556"><span class="hs-identifier hs-var hs-var">&#948;</span></a></span></span><span>    </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679041561"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">[e] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[e]
-</span><a href="#local-6989586621679041742"><span class="hs-identifier hs-var">es</span></a></span><span>
-</span><span id="line-214"></span><span>    </span><span id="local-6989586621679041740"><span class="annot"><span class="annottext">half :: Int
-</span><a href="#local-6989586621679041740"><span class="hs-identifier hs-var hs-var">half</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[e] -&gt; Int
+</span><a href="#local-6989586621679041559"><span class="hs-identifier hs-var">es</span></a></span><span>
+</span><span id="line-214"></span><span>    </span><span id="local-6989586621679041557"><span class="annot"><span class="annottext">half :: Int
+</span><a href="#local-6989586621679041557"><span class="hs-identifier hs-var hs-var">half</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[e] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[e]
-</span><a href="#local-6989586621679041742"><span class="hs-identifier hs-var">es</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679041559"><span class="hs-identifier hs-var">es</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Integral a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">`div`</span></span><span> </span><span class="annot"><span class="hs-number">2</span></span><span>
 </span><span id="line-215"></span><span>
 </span><span id="line-216"></span><span class="annot"><a href="Plot.Text.Histogram.html#fill"><span class="hs-identifier hs-type">fill</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">]</span><span>
 </span><span id="line-217"></span><span id="fill"><span class="annot"><span class="annottext">fill :: Int -&gt; [String] -&gt; [String]
-</span><a href="Plot.Text.Histogram.html#fill"><span class="hs-identifier hs-var hs-var">fill</span></a></span></span><span> </span><span id="local-6989586621679041737"><span class="annot"><span class="annottext">n :: Int
-</span><a href="#local-6989586621679041737"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>    </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; String -&gt; [String]
+</span><a href="Plot.Text.Histogram.html#fill"><span class="hs-identifier hs-var hs-var">fill</span></a></span></span><span> </span><span id="local-6989586621679041554"><span class="annot"><span class="annottext">n :: Int
+</span><a href="#local-6989586621679041554"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>    </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; String -&gt; [String]
 forall a. Int -&gt; a -&gt; [a]
 </span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041737"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679041554"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">String
 forall a. Monoid a =&gt; a
 </span><span class="hs-identifier hs-var">mempty</span></span><span>
-</span><span id="line-218"></span><span class="annot"><a href="Plot.Text.Histogram.html#fill"><span class="hs-identifier hs-var">fill</span></a></span><span> </span><span id="local-6989586621679041736"><span class="annot"><span class="annottext">n :: Int
-</span><a href="#local-6989586621679041736"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679041735"><span class="annot"><span class="annottext">h :: String
-</span><a href="#local-6989586621679041735"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679041734"><span class="annot"><span class="annottext">q :: [String]
-</span><a href="#local-6989586621679041734"><span class="hs-identifier hs-var">q</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; String -&gt; [String]
+</span><span id="line-218"></span><span class="annot"><a href="Plot.Text.Histogram.html#fill"><span class="hs-identifier hs-var">fill</span></a></span><span> </span><span id="local-6989586621679041553"><span class="annot"><span class="annottext">n :: Int
+</span><a href="#local-6989586621679041553"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679041552"><span class="annot"><span class="annottext">h :: String
+</span><a href="#local-6989586621679041552"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679041551"><span class="annot"><span class="annottext">q :: [String]
+</span><a href="#local-6989586621679041551"><span class="hs-identifier hs-var">q</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; String -&gt; [String]
 forall a. Int -&gt; a -&gt; [a]
 </span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679041736"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; String
+</span><a href="#local-6989586621679041553"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; String
 forall a. Int -&gt; a -&gt; [a]
 </span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679041735"><span class="hs-identifier hs-var">h</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-char">' '</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; [String] -&gt; [String]
+</span><a href="#local-6989586621679041552"><span class="hs-identifier hs-var">h</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-char">' '</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; [String] -&gt; [String]
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679041735"><span class="hs-identifier hs-var">h</span></a></span><span class="annot"><span class="annottext">String -&gt; [String] -&gt; [String]
+</span><a href="#local-6989586621679041552"><span class="hs-identifier hs-var">h</span></a></span><span class="annot"><span class="annottext">String -&gt; [String] -&gt; [String]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679041734"><span class="hs-identifier hs-var">q</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679041551"><span class="hs-identifier hs-var">q</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-219"></span></pre></body></html>

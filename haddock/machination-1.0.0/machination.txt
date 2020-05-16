@@ -9,9 +9,6 @@
 @package machination
 @version 1.0.0
 
-module Lib
-someFunc :: IO ()
-
 
 -- | Plot <a>Histogram</a> as unicode strings; for terminal plotting. For
 --   example, one could plot answers and their frequencies to the question:
