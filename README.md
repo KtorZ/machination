@@ -5,7 +5,7 @@
 > A Haskell library for text plotting in the terminal.
 
 <p align="center">
-  <a href="https://hackage.haskell.org/package/cardano-addresses"><img src="https://img.shields.io/hackage/v/machination?style=for-the-badge" /></a>
+  <a href="https://hackage.haskell.org/package/machination"><img src="https://img.shields.io/hackage/v/machination?style=for-the-badge" /></a>
   <a href='https://github.com/KtorZ/machination/actions?query=workflow%3A"Continuous Integration"'><img src="https://img.shields.io/github/workflow/status/KtorZ/machination/Continuous Integration?style=for-the-badge" /></a>
   <a href="https://ktorz.github.io/machination/coverage/hpc_index.html"><img src="https://ktorz.github.io/machination/coverage/badge.svg" /></a>
 </p>
